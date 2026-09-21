@@ -7,7 +7,8 @@ Agentic SDLC — 前后端分离的 Web 项目，采用 [BMAD-METHOD](https://bm
 ```
 ai_sdlc/
 ├── _bmad/            # BMAD 框架安装目录（agents/workflows/tools）
-├── .claude/skills/   # BMAD 生成的 29 个技能（/bmad-help 等命令）
+├── .claude/skills/   # BMAD 技能（Claude Code 用）
+├── .zcode/skills/    # BMAD 技能（ZCode IDE 用，29 个）
 ├── _bmad-output/     # BMAD 工作流产出的文档目录
 ├── frontend/         # 前端：React 18 + Vite + TypeScript + Ant Design
 ├── backend/          # 后端：Python + FastAPI + SQLAlchemy 2 + MySQL
@@ -49,4 +50,6 @@ npm run dev
 
 ## BMAD 使用
 
-从项目根目录启动 AI 代理，输入 `/bmad-help` 开始；BMAD 工作流产出的文档写入 `_bmad-output/`。
+在 ZCode IDE 中打开本仓库即可直接调用 BMAD 技能（位于 `.zcode/skills/`，已在会话中自动发现）：
+输入 `/bmad-help` 查看下一步该做什么，或直接描述需求（如"帮我头脑风暴"、"创建 PRD"），会自动匹配对应技能。
+BMAD 工作流产出的文档写入 `_bmad-output/`。
