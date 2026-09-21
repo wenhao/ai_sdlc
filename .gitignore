@@ -36,3 +36,7 @@ dist/
 
 # BMAD 框架本体（安装器可重新生成）
 _bmad/
+
+# ZCode 本地配置与技能（由 BMAD 安装器生成）
+.zcode/
+.zcodeignore
