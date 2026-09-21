@@ -22,3 +22,15 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Python / Node
+.venv/
+__pycache__/
+node_modules/
+dist/
+.env
+
+# BMAD
+_bmad-output/
+.idea/
+*.tsbuildinfo
