@@ -1,0 +1,15 @@
+{
+  "name": "ai-sdlc-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost playwright test",
+    "test:headed": "NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost playwright test --headed",
+    "test:ui": "NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

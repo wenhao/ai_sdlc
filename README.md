@@ -12,7 +12,8 @@ ai_sdlc/
 ├── _bmad-output/     # BMAD 工作流产出的文档目录
 ├── frontend/         # 前端：React 18 + Vite + TypeScript + Ant Design
 ├── backend/          # 后端：Python + FastAPI + SQLAlchemy 2 + MySQL
-└── database/         # MySQL 建库/建表/种子数据脚本
+├── database/         # MySQL 建库/建表/种子数据脚本
+└── e2e/              # 端到端测试：Playwright（自动拉起前后端）
 ```
 
 ## 技术栈
@@ -46,6 +47,15 @@ uvicorn app.main:app --reload
 cd frontend
 npm install
 npm run dev
+```
+
+### 4. E2E 测试
+
+```bash
+cd e2e
+npm install
+npx playwright install chromium   # 首次需要
+npm test                          # 自动拉起前后端并运行冒烟测试
 ```
 
 ## BMAD 使用
