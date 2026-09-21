@@ -31,6 +31,8 @@ dist/
 .env
 
 # BMAD
-_bmad-output/
 .idea/
 *.tsbuildinfo
+
+# BMAD 框架本体（安装器可重新生成）
+_bmad/
